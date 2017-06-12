@@ -80,7 +80,6 @@ export class ColorPickerDirective implements OnInit, OnChanges {
         if (color !== this.colorPicker) {
             //setTimeout(() => {
               this.colorPickerChange.emit(color);
-              this.cdr.detectChanges();
             //}, 0);
         }
     }
